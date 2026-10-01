@@ -1,0 +1,23 @@
+
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+android {
+    namespace "com.example.mobilecallinglauncher"
+    compileSdk flutter.compileSdkVersion
+
+    defaultConfig {
+        applicationId "com.example.mobilecallinglauncher"
+        minSdk 26
+        targetSdk flutter.targetSdkVersion
+        versionCode 1
+        versionName "1.0.0"
+    }
+}
+
+flutter {
+    source "../.."
+}
